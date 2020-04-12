@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- comments also had some limitation like inside style element it works abnormally-->
+
+<head>
+  <!-- check the image format used in background image-->
+  <!-- body {background-image: url('imgshare.png');}-->
+  <style>
+    body {  background-color: DarkSeaGreen;  }
+
+    h3  {  color: SeaShell;  }
+
+    th  {
+          font-size: 20;
+          text-align: left;
+          color: AliceBlue;  }
+
+    td {
+      font-size: 50;
+      text-align: left;  }
+
+    #tb1 {
+      cellspacing: 10px;
+      color: black;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title>Share holder table</title>
+</head>
+
+<body>
+  <h3 style="text-align:center; font-size:60px; background:DarkSlateGrey;border:2px solid black">Share holder table</h3>
+  <table id="tb1" ; align="center" ; cellspacing="10" ;>
+    <!--border="1px" -->
+    <thead>
+      <tr>
+        <th>Sr. No.</th>
+        <th>Name</th>
+        <th>Designation</th>
+        <th>Share (%)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1)</strong></td>
+        <td>Aniket Jain</td>
+        <td>Founder</td>
+        <td>50%</td>
+      </tr>
+      <tr>
+        <td><strong>2)</strong></td>
+        <td>Shubham Jain</td>
+        <td>Partner</td>
+        <td>25%</td>
+      </tr>
+      <tr>
+        <td><strong>3)</strong></td>
+        <td>Richa Jain</td>
+        <td>Partner</td>
+        <td>25%</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <!--If we wanted to combine the two cells into one cell, we could use the colspan="2" attribute in the <td> tag. -->
+        <td colspan="3">Total members in the group</td>
+        <td>3</td>
+      </tr>
+    </tfoot>
+  </table>
+  <br>
+  <h2 align="center" ;>Practise Table</h2>
+  <table align="center" ; cellspacing="10">
+    <thead>
+      <tr>
+        <th colspan="2">table update</th>
+      </tr>
+    <tbody>
+      <tr>
+        <td>hello</td>
+        <td>Bolo</td>
+      </tr>
+    </tbody>
+    </thead>
+  </table>
+  <p align="center">Copyright XTechnology</p>
+</body>
+
+</html>
