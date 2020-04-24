@@ -30,8 +30,8 @@
 </head>
 
 <body>
-  <h3 style="text-align:center; border:2px solid black;background-color: Azure;font-size:60px;" ;><strong>Contact me</strong></h3 <!-- Using tables with HTML -->
-  <table align="center" ; cellspacing="10">
+  <h3 style="text-align:center; border:2px solid black;background-color: Azure;font-size:30px;" ;><strong>Contact me</strong></h3 <!-- Using tables with HTML -->
+  <table align="center" cellspacing="10" style="font-size : 15px">
     <!-- , border="1"-->
     <tr>
       <td>Phone</td>
@@ -63,23 +63,29 @@
   </ul>
   <hr size="2.5" color="black"><br>
   <!-- use border attribute to see the layout   " border=2px solid black  "-->
-  <table align="center">
+  <table align="center" style="font-size: 15px">
     <tr>
-      <form class="" action="index.html" method="post">
+      <!-- the action part will take you to index file i.r the front page, you can use mailto:aniket.jain@gmail.com to strt your default mail client-->
+      <form action="mailto:aniket.jain@gmail.com" method="post" enctype="text/plain">
         <td><label for="User Name">Your Name</label></td>
-        <td>:</td>
-        <td><input type="text" name="" value=""><br></td>
-        <td><label for="password">Password</label></td>
-        <td>:</td>
-        <td><input type="password" name="" value=""></td>
+        <td><input type="text" name="" value="Enter Name"><br></td>
+        <td><label for="E-mail">Mail ID</label></td>
+        <td><input type="email" name="" value="Enter Email address"></td>
+    </tr>
+    <tr>
+      <td align="center"colspan="4">
+        <label for="Short message">Message</label>
+        <textarea name="Write message" rows="8" cols="30">Enter the message!</textarea>
+      </td>
+    </tr>
     <tr>
       <!--use id attribute first to see its affect -->
-      <td id="cell" ; colspan="6" ;><input type="submit" name="Password"></td>
+      <td id="cell" ; colspan="6" ;><input type="submit" name=""></td>
     </tr>
     </form>
-    </tr>
+    <!--</tr>  <td>:</td>-->
   </table>
-  <p align="center">Copyright XTechnology</p>
+  <p align="center" style="font-size : 12.px">*** Copyright XTechnology December 2020 ® ***</p>
 </body>
 
 </html>
